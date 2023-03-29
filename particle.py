@@ -19,3 +19,4 @@ w = 0.8
 
 # Create particles
 n_particles = 50
+np.random.seed(100)
