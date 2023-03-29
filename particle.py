@@ -16,3 +16,6 @@ y_min = y.ravel()[z.argmin()]
 # Hyper-parameter of the algorithm
 c1 = c2 = 0.1
 w = 0.8
+
+# Create particles
+n_particles = 50
