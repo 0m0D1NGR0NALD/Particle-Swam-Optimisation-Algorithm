@@ -20,3 +20,6 @@ w = 0.8
 # Create particles
 n_particles = 50
 np.random.seed(100)
+
+X = np.random.rand(2, n_particles) * 5
+V = np.random.randn(2, n_particles) * 0.1
