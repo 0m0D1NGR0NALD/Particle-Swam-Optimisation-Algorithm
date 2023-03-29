@@ -23,3 +23,7 @@ np.random.seed(100)
 
 X = np.random.rand(2, n_particles) * 5
 V = np.random.randn(2, n_particles) * 0.1
+
+# Initialize data
+pbest = X
+pbest_obj = f(X[0], X[1])
