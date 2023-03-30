@@ -29,3 +29,10 @@ pbest = X
 pbest_obj = f(X[0], X[1])
 gbest = pbest[:, pbest_obj.argmin()]
 gbest_obj = pbest_obj.min()
+
+# Generating PSO algorithm
+
+# Update params
+r1, r2 = np.random.rand(2)
+V = w * V + c1*r1*(pbest - X) + c2*r2*(gbest.reshape(-1,1)-X)
+X = X + V
