@@ -39,3 +39,4 @@ X = X + V
 obj = f(X[0], X[1])
 pbest[:, (pbest_obj >= obj)] = X[:, (pbest_obj >= obj)]
 pbest_obj = np.array([pbest_obj, obj]).min(axis=0)
+gbest = pbest[:, pbest_obj.argmin()]
