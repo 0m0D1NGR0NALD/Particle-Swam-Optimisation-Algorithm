@@ -48,3 +48,4 @@ def update():
 fig, ax = plt.subplots(figsize=(8,6))
 fig.set_tight_layout(True)
 img = ax.imshow(z, extent=[0, 5, 0, 5], origin='lower', cmap='viridis', alpha=0.5)
+fig.colorbar(img, ax=ax)
