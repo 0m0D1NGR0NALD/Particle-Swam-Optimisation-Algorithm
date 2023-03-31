@@ -56,3 +56,5 @@ pbest_plot = ax.scatter(pbest[0], pbest[1], marker='o', color='black', alpha=0.5
 p_plot = ax.scatter(X[0], X[1], marker='o', color='blue', alpha=0.5)
 p_arrow = ax.quiver(X[0], X[1], V[0], V[1], color='blue', width=0.005, angles='xy', scale_units='xy', scale=1)
 gbest_plot = plt.scatter([gbest[0]], [gbest[1]], marker='*', s=100, color='black', alpha=0.4)
+ax.set_xlim([0,5])
+ax.set_ylim([0,5])
