@@ -51,3 +51,4 @@ img = ax.imshow(z, extent=[0, 5, 0, 5], origin='lower', cmap='viridis', alpha=0.
 fig.colorbar(img, ax=ax)
 ax.plot([x_min], [y_min], marker='x', markersize=5, color="white")
 contours = ax.contour(x, y, z, 10, colors='black', alpha=0.4)
+ax.clabel(contours, inline=True, fontsize=8, fmt="%.0f")
