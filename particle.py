@@ -43,3 +43,7 @@ def update():
     pbest_obj = np.array([pbest_obj, obj]).min(axis=0)
     gbest = pbest[:, pbest_obj.argmin()]
     gbest_obj = pbest_obj.min()
+
+# Set up base figure: The contour map
+fig, ax = plt.subplots(figsize=(8,6))
+fig.set_tight_layout(True)
