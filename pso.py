@@ -74,3 +74,5 @@ def animate(i)
 
 anim = FuncAnimation(fig, animate, frames=list(range(1,50)), interval=500, blit=False, repeat=True)
 anim.save("PSO.gif", dpi=120, writer="imagemagick")
+
+print("PSO found best solution at f({})={}".format(gbest, gbest_obj))
