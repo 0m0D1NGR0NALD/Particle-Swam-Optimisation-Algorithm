@@ -59,13 +59,15 @@ gbest_plot = plt.scatter([gbest[0]], [gbest[1]], marker='*', s=100, color='black
 ax.set_xlim([0,5])
 ax.set_ylim([0,5])
 
-title = 'Iteration {:02d}'.format(i)
-# Update params
-update()
-# Set picture
-ax.set_title(title)
-pbest_plot.set_offsets(pbest.T)
-p_plot.set_offsets(X.T)
-p_arrow.set_offsets(X.T)
-p_arrow.set_UVC(V[0], V[1])
-gbest_plot.set_offsets(gbest.reshape(1,-1))
+def animate(i)
+    title = 'Iteration {:02d}'.format(i)
+    # Update params
+    update()
+    # Set picture
+    ax.set_title(title)
+    pbest_plot.set_offsets(pbest.T)
+    p_plot.set_offsets(X.T)
+    p_arrow.set_offsets(X.T)
+    p_arrow.set_UVC(V[0], V[1])
+    gbest_plot.set_offsets(gbest.reshape(1,-1))
+    return ax, pbest_plot, p_plot, p_arrow, gbest_plot
