@@ -60,3 +60,5 @@ ax.set_xlim([0,5])
 ax.set_ylim([0,5])
 
 title = 'Iteration {:02d}'.format(i)
+# Update params
+update()
