@@ -71,3 +71,5 @@ def animate(i)
     p_arrow.set_UVC(V[0], V[1])
     gbest_plot.set_offsets(gbest.reshape(1,-1))
     return ax, pbest_plot, p_plot, p_arrow, gbest_plot
+
+anim = FuncAnimation(fig, animate, frames=list(range(1,50)), interval=500, blit=False, repeat=True)
