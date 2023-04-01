@@ -58,3 +58,5 @@ p_arrow = ax.quiver(X[0], X[1], V[0], V[1], color='blue', width=0.005, angles='x
 gbest_plot = plt.scatter([gbest[0]], [gbest[1]], marker='*', s=100, color='black', alpha=0.4)
 ax.set_xlim([0,5])
 ax.set_ylim([0,5])
+
+title = 'Iteration {:02d}'.format(i)
