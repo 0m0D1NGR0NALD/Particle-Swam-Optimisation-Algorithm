@@ -64,3 +64,4 @@ title = 'Iteration {:02d}'.format(i)
 update()
 # Set picture
 ax.set_title(title)
+pbest_plot.set_offsets(pbest.T)
