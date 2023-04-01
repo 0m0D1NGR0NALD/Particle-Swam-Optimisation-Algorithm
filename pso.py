@@ -76,3 +76,4 @@ anim = FuncAnimation(fig, animate, frames=list(range(1,50)), interval=500, blit=
 anim.save("PSO.gif", dpi=120, writer="imagemagick")
 
 print("PSO found best solution at f({})={}".format(gbest, gbest_obj))
+print("Global optimal at f({})={}".format([x_min,y_min], f(x_min,y_min)))
