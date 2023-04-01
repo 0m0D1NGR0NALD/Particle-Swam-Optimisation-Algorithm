@@ -62,3 +62,5 @@ ax.set_ylim([0,5])
 title = 'Iteration {:02d}'.format(i)
 # Update params
 update()
+# Set picture
+ax.set_title(title)
